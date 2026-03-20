@@ -148,3 +148,9 @@ resource "aws_autoscaling_policy" "cpu_target_tracking" {
     target_value = 50.0
   }
 }
+
+data "aws_instances" "asg_instances" {
+  instance_tags = {
+    "aws:autoscaling:groupName" = aws_autoscaling_group.web_asg.name
+  }
+}
