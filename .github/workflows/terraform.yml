@@ -10,7 +10,7 @@ permissions:
   id-token: write
   contents: read
 env:
-    aws_region: us-east-1
+    TF_VAR_aws_region: us-east-1
     TF_VAR_ami_id: ${{ secrets.AMI_ID }}
     TF_VAR_key_pair_name: ${{ secrets.KEY_PAIR_NAME }}
     TF_VAR_ssh_cidr: ${{ secrets.SSH_CIDR }}
