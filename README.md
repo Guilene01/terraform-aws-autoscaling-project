@@ -8,6 +8,9 @@ This project uses Terraform to deploy a highly available Apache web application 
 
 ## Architecture
 
+<img width="412" height="627" alt="image" src="https://github.com/user-attachments/assets/fa58f635-04db-46fb-97d0-a52c45cf49c8" />
+
+
 The following AWS resources are provisioned by Terraform:
 
 - **Security Group** — Controls inbound and outbound traffic. Allows HTTP (port 80) from anywhere and SSH (port 22) from a specified IP address.
