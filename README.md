@@ -20,30 +20,7 @@ The following AWS resources are provisioned by Terraform:
 
 ### Infrastructure Diagram
 
-```
-Internet
-    |
-    v
-Application Load Balancer
-    |
-    v
-Load Balancer Listener (port 80)
-    |
-    v
-Target Group (health checks)
-    /         \
-   v           v
-EC2 (AZ-1)  EC2 (AZ-2)
-      \         /
-       v       v
-     Auto Scaling Group
-          |
-          v
-    CloudWatch (CPU monitoring)
-          |
-          v
-    Scaling Policy (target 50% CPU)
-```
+
 <img width="550" height="670" alt="image" src="https://github.com/user-attachments/assets/a8b3fdc4-da68-4c44-b9e9-071a4b9ad5b2" />
 
 
